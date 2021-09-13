@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uTB-hT-3yL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Сообщения-->
+        <scene sceneID="g2t-Cj-TK3">
+            <objects>
+                <viewController id="OG1-Ig-EGf" customClass="MessageViewController" customModule="CloneVK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kaf-Hh-we0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DH1-qz-dGi">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wgv-IZ-ca5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DH1-qz-dGi" firstAttribute="bottom" secondItem="wgv-IZ-ca5" secondAttribute="bottom" id="2eP-KK-yqH"/>
+                            <constraint firstItem="DH1-qz-dGi" firstAttribute="top" secondItem="wgv-IZ-ca5" secondAttribute="top" id="CGO-9S-C2t"/>
+                            <constraint firstItem="DH1-qz-dGi" firstAttribute="leading" secondItem="wgv-IZ-ca5" secondAttribute="leading" id="IoA-1S-sP7"/>
+                            <constraint firstItem="DH1-qz-dGi" firstAttribute="trailing" secondItem="wgv-IZ-ca5" secondAttribute="trailing" id="i9k-sN-fx9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Сообщения" id="zaj-d5-Twr"/>
+                    <connections>
+                        <outlet property="tableView" destination="DH1-qz-dGi" id="vyi-LZ-g8x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7FF-Yi-QQL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1827.5362318840582" y="30.803571428571427"/>
+        </scene>
+        <!--Сообщения-->
+        <scene sceneID="KyD-oR-0e8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uTB-hT-3yL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Сообщения" image="message" catalog="system" id="lSR-Cx-5WK"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CMa-b5-DLc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OG1-Ig-EGf" kind="relationship" relationship="rootViewController" id="fNg-Ar-aog"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rCU-52-mIR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="917.39130434782612" y="30.803571428571427"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="message" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
